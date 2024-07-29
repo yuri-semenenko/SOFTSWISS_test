@@ -1,0 +1,39 @@
+.content {
+  padding: 20px;
+  color: $color-text-dark;
+  font-size: 14px;
+  font-weight: 700;
+
+  &__title {
+    color: $color-text;
+    font-size: 18px;
+    margin: 0 0 16px;
+  }
+
+  &__more-link {
+    color: $color-link;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+  }
+
+  @include respond-to(tablet) {
+    padding: 20px 30px;
+    font-size: 16px;
+
+    &__title {
+      font-size: 24px;
+    }
+  }
+
+  @include respond-to(desktop) {
+    padding: 30px 80px;
+    font-size: 20px;
+
+    &__title {
+      font-size: 32px;
+    }
+  }
+}

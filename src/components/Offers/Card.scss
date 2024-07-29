@@ -1,0 +1,47 @@
+.card {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 26px;
+  border-radius: 10px;
+  justify-content: flex-end;
+  align-content: flex-end;
+
+  &__title {
+    margin: 0 0 22px;
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 2px $color-link solid;
+    height: 34px;
+    border-radius: 17px;
+    padding: 10px 40px;
+    color: $color-link;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+
+    &:hover,
+    &:focus {
+      color: $color-link-hover;
+      border-color: $color-link-hover;
+      outline: none;
+    }
+  }
+
+  @include respond-to(desktop) {
+    &:first-of-type,
+    &:last-of-type {
+      grid-column: 1 / -1;
+    }
+  }
+}

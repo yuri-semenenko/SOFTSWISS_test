@@ -1,0 +1,19 @@
+$font-primary: 'Lato', sans-serif;
+$color-background: #304571;
+$color-background-dark: #000;
+$color-background-light: #fff;
+$color-text: #fff;
+$color-text-dark: rgba(255, 255, 255, 0.6);
+$color-link: rgba(235, 255, 0, 1);
+$color-link-hover: rgba(235, 255, 0, 0.6);
+$color-accent: #ff70d9;
+
+// Breakpoints for responsiveness
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+//sizes
+$header-height-mobile: 50px;
+$header-height-tablet: 80px;
+$footer-height: 127px;

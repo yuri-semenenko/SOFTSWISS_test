@@ -1,0 +1,26 @@
+@import './styles/index.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: $font-primary;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: $color-background;
+  color: $color-text;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

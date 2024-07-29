@@ -1,0 +1,94 @@
+.hero-block {
+  background: url('../../assets/earth.webp') no-repeat center -120px / 336px,
+    url('../../assets/heroblock_bg.webp') no-repeat center center / cover;
+  min-height: 450px;
+  padding: 44px 33px;
+  color: $color-text;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0 0 22px;
+
+    span {
+      color: $color-accent;
+    }
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 900;
+    margin: 0 0 22px;
+
+    span {
+      color: $color-link;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    background: $color-link;
+    border: none;
+    border-radius: 17px;
+    padding: 10px 40px;
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-color: $color-link-hover;
+    }
+  }
+
+  @include respond-to(tablet) {
+    padding: 20px 30px;
+    background-position: 120% 40px, center;
+    min-height: 420px;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    line-height: 1;
+
+    &__title {
+      width: 420px;
+      font-size: 48px;
+    }
+
+    &__subtitle {
+      width: 420px;
+      font-size: 22px;
+    }
+  }
+
+  @include respond-to(desktop) {
+    padding: 60px 80px;
+    background-position: 95% 40px, center;
+    background-size: 367, cover;
+    min-height: 490px;
+
+    &__title {
+      width: 690px;
+      font-size: 72px;
+    }
+
+    &__subtitle {
+      width: 690px;
+      font-size: 32px;
+    }
+
+    &__link {
+      height: 54px;
+      border-radius: 27px;
+      font-size: 22px;
+    }
+  }
+}

@@ -26,8 +26,8 @@ npm run dev
 
 - Reading the task and reviewing the design: ~1 hour
 - Creating markup: ~5 to 5.5 hours
-- Deploying: ~10 minutes
+- Deploying: ~30 minutes
 
 ## Deployment
 
-This project is deployed at [github page](https://yuri-semenenko.github.io/test-softswiss/). You can access the live version to see the project in action.
+This project is deployed at [github page](https://yuri-semenenko.github.io/SOFTSWISS_test/). You can access the live version to see the project in action.
